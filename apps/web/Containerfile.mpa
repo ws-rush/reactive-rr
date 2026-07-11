@@ -1,28 +1,48 @@
-FROM node:20-alpine AS build-stage
+FROM node:22-alpine AS build-stage
 
 ENV NODE_ENV=development
 
 WORKDIR /app
 RUN corepack enable
 
-COPY package.json ./
+# Copy workspace configurations, lockfile, and package files
+COPY pnpm-workspace.yaml package.json pnpm-lock.yaml* .npmrc* ./
+COPY patches* ./patches/
+COPY apps/web/package.json ./apps/web/
+COPY packages/ ./packages/
+
+# Install dependencies using lockfile
 RUN --mount=type=cache,id=pnpm-store,target=/root/.pnpm-store \
-    pnpm install
+    pnpm install --frozen-lockfile
 
+# Copy the rest of the workspace source code
 COPY . .
-RUN pnpm build
 
-FROM node:20-alpine AS production-stage
+# Build the web application
+RUN pnpm --filter @reactive-rr/web build
+
+FROM node:22-alpine AS production-stage
 
 ENV NODE_ENV=production
 
 WORKDIR /app
 RUN corepack enable
 
-COPY package.json ./
-RUN --mount=type=cache,id=pnpm-store,target=/root/.pnpm-store \
-    pnpm install --prod
+# Copy workspace configurations, lockfile, and package files for production installation
+COPY pnpm-workspace.yaml package.json pnpm-lock.yaml* .npmrc* ./
+COPY patches* ./patches/
+COPY apps/web/package.json ./apps/web/
+COPY packages/ ./packages/
 
-COPY --from=build-stage /app/build ./build
+# Install production dependencies only
+RUN --mount=type=cache,id=pnpm-store,target=/root/.pnpm-store \
+    pnpm install --prod --frozen-lockfile
+
+# Copy built application and local workspace dependencies from build stage
+COPY --from=build-stage /app/apps/web/build ./apps/web/build
+COPY --from=build-stage /app/packages ./packages
+
+# Set working directory to the web app directory to run the server
+WORKDIR /app/apps/web
 
 CMD ["pnpm", "run", "start:server"]

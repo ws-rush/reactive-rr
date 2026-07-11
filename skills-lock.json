@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "enhanced-message-context": {
+      "source": "lingui/skills",
+      "sourceType": "github",
+      "skillPath": "enhanced-message-context/SKILL.md",
+      "computedHash": "84d0a3d209e678781fe5aa7152e108cfb91ff7c6b7a1c39e15fccd5d8dcdf4c8"
+    },
+    "lingui-best-practices": {
+      "source": "lingui/skills",
+      "sourceType": "github",
+      "skillPath": "lingui-best-practices/SKILL.md",
+      "computedHash": "e8d118460a9f7198b5c18cd8bfd9ef8e12904b7cc14d6f56e972cede4beab4e2"
+    },
+    "react-router": {
+      "source": "remix-run/react-router",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/react-router/SKILL.md",
+      "computedHash": "ff4d9bc724f0e56a51c453eef5b93caef1c16d3623ac49345d74fc1a5efbc05a"
+    }
+  }
+}

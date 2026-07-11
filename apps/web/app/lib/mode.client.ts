@@ -1,12 +1,14 @@
+import { literal } from './i18n'
+
 export type Mode = 'system' | 'light' | 'dark'
 
 export const mode = {
   // used for mode event listners
   darkListner({ matches }: { matches: boolean }) {
-    document.documentElement.classList.toggle('dark', matches)
+    document.documentElement.classList.toggle(literal('dark'), matches)
   },
 
-  darkMedia: window.matchMedia('(prefers-color-scheme: dark)'),
+  darkMedia: window.matchMedia(literal('(prefers-color-scheme: dark)')),
 
   get isDark() {
     return this.value === 'system'
@@ -18,24 +20,25 @@ export const mode = {
     return this.darkMedia.matches
   },
 
-  modes: ['system', 'light', 'dark'] as Mode[],
+  modes: [literal('system'), literal('light'), literal('dark')] as Mode[],
 
   set(_mode: Mode) {
     if (_mode === 'system') {
-      localStorage.removeItem('mode')
+      localStorage.removeItem(literal('mode'))
       this.darkListner({ matches: this.darkMedia.matches })
-      this.darkMedia.addEventListener('change', this.darkListner)
+      this.darkMedia.addEventListener(literal('change'), this.darkListner)
     } else {
       localStorage.mode = _mode
       this.darkListner({ matches: _mode === 'dark' })
-      this.darkMedia.removeEventListener('change', this.darkListner)
+      this.darkMedia.removeEventListener(literal('change'), this.darkListner)
     }
   },
 
   toggleColorMode() {
     const currentMode = mode.value
-    if (currentMode === 'system' || currentMode === 'dark') mode.set('light')
-    else mode.set('dark')
+    if (currentMode === 'system' || currentMode === 'dark')
+      mode.set(literal('light'))
+    else mode.set(literal('dark'))
   },
   toggleSystemMode() {
     const modes = mode.modes
@@ -43,6 +46,6 @@ export const mode = {
     mode.set(newMode)
   },
   get value() {
-    return (localStorage.getItem('mode') || 'system') as Mode
+    return (localStorage.getItem(literal('mode')) || literal('system')) as Mode
   },
 }

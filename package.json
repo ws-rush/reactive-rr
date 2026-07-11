@@ -1,7 +1,13 @@
 {
+  "name": "reactive-rr",
+  "version": "8.2.0-0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ws-rush/reactive-rr.git"
+  },
+  "packageManager": "pnpm@10.30.3",
   "scripts": {
-    "web": "pnpm --filter @reactive/web",
-    "doc": "pnpm --filter @reactive/doc"
+    "web": "pnpm --filter @reactive-rr/web"
   },
   "devDependencies": {
     "lefthook": "^1.11.14"

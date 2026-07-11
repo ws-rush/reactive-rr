@@ -1,8 +1,9 @@
 import { remixRoutesOptionAdapter } from '@react-router/remix-routes-option-adapter'
 import { flatRoutes } from 'remix-flat-routes'
+import { literal } from './lib/i18n'
 
 export default remixRoutesOptionAdapter((defineRoutes) => {
-  return flatRoutes('routes', defineRoutes, {
+  return flatRoutes(literal('routes'), defineRoutes, {
     ignoredRouteFiles: ['**/.*'], // Ignore dot files (like .DS_Store)
     //appDir: 'app',
     //routeDir: 'routes',

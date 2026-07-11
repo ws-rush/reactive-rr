@@ -1,16 +1,15 @@
 <p align='center'>
-  <img src='https://api.iconify.design/carbon:chart-radar.svg?color=%23939598' alt='Reactive - Opinionated Vite Starter Template' width='80'/>
+  <img src='https://api.iconify.design/carbon:chart-radar.svg?color=%23939598' alt='Reactive-rr - Opinionated Vite Starter Template' width='80'/>
 </p>
 
 <p align='center'>
-Mocking up web app with <b>Reactive</b><br>
+Mocking up web app with <b>Reactive-rr</b><br>
 </p>
 
 <br>
 
 <p align='center'>
 <a href="https://reactive-template.netlify.app/">Live Demo</a>
-<a href="https://reactive-docs.netlify.app/">Docs</a>
 </p>
 
 <br>
@@ -19,7 +18,7 @@ Mocking up web app with <b>Reactive</b><br>
 
 - ⚡️ [React 19](https://react.dev/), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
 
-- 🗂️ [File based routing with layouts support](https://reactrouter.com/dev/how-to/file-route-conventions)
+- 🗂️ [File based routing with layouts support](https://reactrouter.com/dev/how-to/file-route-conventions), with a bundled [skill](.agents/skills/react-router/SKILL.md) to guide router usage
 
 - 🎨 [Tailwindcss](https://tailwindcss.com/) - A utility-first CSS framework packed with classes
 
@@ -27,7 +26,7 @@ Mocking up web app with <b>Reactive</b><br>
 
 - 🔤 [Self-hosted fonts](https://fontsource.org/fonts/red-hat-text/install).
 
-- 🌍 [I18n ready](https://lingui.dev/)
+- 🌍 [I18n ready](https://lingui.dev/) — with a dedicated linter ([eslint-plugin-lingui](https://github.com/lingui/eslint-plugin)) and bundled [skills](.agents/skills/lingui-best-practices/SKILL.md) to keep translations consistent
 
 <!-- - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa) -->
 
@@ -50,18 +49,18 @@ Mocking up web app with <b>Reactive</b><br>
 
 ## Try it now!
 
-> Reactive requires Node >=20.x
+> Reactive-rr requires Node >=20.x
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/wusaby-rush/reactive/generate).
+[Create a repo from this template on GitHub](https://github.com/ws-rush/reactive-rr/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit ws-rush/reactive my-reactive-app
+npx degit ws-rush/reactive-rr my-reactive-app
 cd my-reactive-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
@@ -98,25 +97,53 @@ And you will see the generated file in `dist` that ready to be served.
 
 ### Container Production Build
 
-First, build the reactive image by opening the terminal in the project's root directory.
+First, build the reactive-rr image by opening the terminal in the project's root directory.
 
 ```bash
 ## SPA build
-podman build -t reactive-spa -f apps/web/Containerfile.spa apps/web
+podman build -t reactive-rr-spa -f apps/web/Containerfile.spa apps/web
 
 ## MPA build
-podman build -t reactive-mpa -f apps/web/Containerfile.mpa apps/web
+podman build -t reactive-rr-mpa -f apps/web/Containerfile.mpa apps/web
 ```
 
 Run the image and specify port mapping with the `-p` flag.
 
 ```bash
 ## SPA run
-podman run --rm -p 8080:80 reactive-spa:latest
+podman run --rm -p 8080:80 reactive-rr-spa:latest
 
 ## MPA run
-podman run --rm -env-file apps/web/.env -p 3000:3000 reactive-mpa:latest
+podman run --rm -env-file apps/web/.env -p 3000:3000 reactive-rr-mpa:latest
 ```
+
+## Staying up to date
+
+This is a template, not a dependency — it evolves over time. Here's how to spot new releases and see exactly which files differ between your version and a newer one.
+
+### Checking for changes
+
+The template's version lives in the root [`package.json`](package.json) under `"version"` (e.g. `8.2.0-0`). A bump there means a new release — compare it to the version you started from. Releases and version tags also appear on [GitHub](https://github.com/ws-rush/reactive-rr/releases).
+
+> **Tip:** leave that version value untouched (in `package.json` or a `TEMPLATE_VERSION` file) — it *is* your baseline. Overwriting it with your app's own version loses the reference you need to track upstream changes.
+
+### Getting the changes
+
+Compare the two versions **inside the template** (your baseline → the target version) to see which files changed — not against your own project, which has diverged.
+
+Easiest: GitHub's compare view between the two version tags (no clone needed):
+
+> `https://github.com/ws-rush/reactive-rr/compare/<your-version>...<target-version>`
+
+Or, in a clone of the template, list the changed files:
+
+```bash
+git diff <your-version>..<target-version> --stat        # changed files
+git diff <your-version>..<target-version> --name-only   # file paths only
+git diff <your-version>..<target-version> -- <file>     # one file's diff
+```
+
+Then port the changes that make sense into your project by hand.
 
 ## Why
 

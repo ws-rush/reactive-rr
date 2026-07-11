@@ -2,8 +2,9 @@ import mitt from 'mitt'
 
 import { useEffect } from 'react'
 import { type NavigateOptions, type To, useNavigate } from 'react-router' // This hook should work
+import { literal } from './i18n'
 
-export const NAVIGATE_EVENT = 'APP_NAVIGATE' // Choose a unique event name
+export const NAVIGATE_EVENT = literal('APP_NAVIGATE') // Choose a unique event name
 
 type NavigateEventPayload = {
   path: To

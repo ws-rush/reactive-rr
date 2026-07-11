@@ -16,23 +16,23 @@ export default function TheCounter({ initial }: Props) {
   }
 
   return (
-    <div>
-      {count}
+    <div className="inline-flex items-center gap-3 m-2">
+      <span className="tabular-nums font-medium text-lg">{count}</span>
       <button
-        className="inc"
+        className="icon-btn text-2xl px-2 leading-none"
+        data-testid="dec-button"
+        onClick={dec}
+        type="button"
+      >
+        −
+      </button>
+      <button
+        className="icon-btn text-2xl px-2 leading-none"
         data-testid="inc-button"
         onClick={inc}
         type="button"
       >
         +
-      </button>
-      <button
-        className="dec"
-        data-testid="dec-button"
-        onClick={dec}
-        type="button"
-      >
-        -
       </button>
     </div>
   )
