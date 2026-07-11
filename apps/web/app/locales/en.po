@@ -21,10 +21,6 @@ msgstr "← Back to Error Tests"
 msgid "⚠️ This will cause an error to demonstrate the ErrorBoundary"
 msgstr "⚠️ This will cause an error to demonstrate the ErrorBoundary"
 
-#: app/components/TheFooter.tsx:51
-msgid "About"
-msgstr "About"
-
 #: app/components/error-boundary-content.tsx:38
 msgid "Access Denied"
 msgstr "Access Denied"
@@ -33,27 +29,27 @@ msgstr "Access Denied"
 msgid "Action Error Test Route"
 msgstr "Action Error Test Route"
 
-#: app/routes/test.loader-error.tsx:120
+#: app/routes/test.loader-error.tsx:123
 msgid "Always wrap data loading in try-catch blocks to handle errors gracefully"
 msgstr "Always wrap data loading in try-catch blocks to handle errors gracefully"
 
-#: app/components/error-boundary-content.tsx:71
+#: app/components/error-boundary-content.tsx:73
 msgid "An error occurred while loading this page."
 msgstr "An error occurred while loading this page."
 
-#: app/components/error-boundary-content.tsx:211
+#: app/components/error-boundary-content.tsx:214
 msgid "An error report has been sent to our team. Thank you for your help."
 msgstr "An error report has been sent to our team. Thank you for your help."
 
-#: app/components/error-boundary-content.tsx:273
+#: app/components/error-boundary-content.tsx:277
 msgid "An unexpected error occurred."
 msgstr "An unexpected error occurred."
 
-#: app/components/error-boundary-content.tsx:247
+#: app/components/error-boundary-content.tsx:251
 msgid "Application Error"
 msgstr "Application Error"
 
-#: app/routes/test.error.tsx:61
+#: app/routes/test.error.tsx:59
 msgid "Application Error Test"
 msgstr "Application Error Test"
 
@@ -65,11 +61,11 @@ msgstr "Back"
 msgid "Bad Request"
 msgstr "Bad Request"
 
-#: app/components/TheFooter.tsx:43
+#: app/components/TheFooter.tsx:42
 msgid "Change language"
 msgstr "Change language"
 
-#: app/routes/test.error.tsx:186
+#: app/routes/test.error.tsx:187
 msgid "Click any of the buttons above to trigger different types of errors"
 msgstr "Click any of the buttons above to trigger different types of errors"
 
@@ -77,7 +73,7 @@ msgstr "Click any of the buttons above to trigger different types of errors"
 msgid "Component useEffect hook"
 msgstr "Component useEffect hook"
 
-#: app/routes/($lang)._index.tsx:120
+#: app/routes/($lang)._index.tsx:114
 msgid "count is"
 msgstr "count is"
 
@@ -89,7 +85,7 @@ msgstr "Data Loading Error (404)"
 msgid "Data Loading Error Simulation"
 msgstr "Data Loading Error Simulation"
 
-#: app/routes/test.error.tsx:108
+#: app/routes/test.error.tsx:106
 msgid "Data Loading Error Test (SPA Mode)"
 msgstr "Data Loading Error Test (SPA Mode)"
 
@@ -97,7 +93,7 @@ msgstr "Data Loading Error Test (SPA Mode)"
 msgid "Demo of dynamic route"
 msgstr "Demo of dynamic route"
 
-#: app/routes/test.error.tsx:190
+#: app/routes/test.error.tsx:191
 msgid "Each error type will be caught by the ErrorBoundary component"
 msgstr "Each error type will be caught by the ErrorBoundary component"
 
@@ -113,7 +109,7 @@ msgstr "Error Code"
 msgid "Error Code Examples"
 msgstr "Error Code Examples"
 
-#: app/routes/test.loader-error.tsx:115
+#: app/routes/test.loader-error.tsx:118
 msgid "Error Handling Best Practices"
 msgstr "Error Handling Best Practices"
 
@@ -125,11 +121,11 @@ msgstr "Error Type"
 msgid "ErrorBoundary catches and displays user-friendly error"
 msgstr "ErrorBoundary catches and displays user-friendly error"
 
-#: app/routes/test.error.tsx:45
+#: app/routes/test.error.tsx:43
 msgid "ErrorBoundary Test Page"
 msgstr "ErrorBoundary Test Page"
 
-#: app/routes/($lang)._index.tsx:53
+#: app/routes/($lang)._index.tsx:52
 msgid "File-based routing with layouts"
 msgstr "File-based routing with layouts"
 
@@ -137,23 +133,23 @@ msgstr "File-based routing with layouts"
 msgid "Form Submission Error Test"
 msgstr "Form Submission Error Test"
 
-#: app/routes/test.error.tsx:133
+#: app/routes/test.error.tsx:131
 msgid "Form Submission Error Test (SPA Mode)"
 msgstr "Form Submission Error Test (SPA Mode)"
 
-#: app/routes/($lang)._index.tsx:138
+#: app/routes/($lang)._index.tsx:132
 msgid "GO"
 msgstr "GO"
 
-#: app/components/error-boundary-content.tsx:182
+#: app/components/error-boundary-content.tsx:184
 msgid "Go Back"
 msgstr "Go Back"
 
-#: app/routes/test.error.tsx:142
+#: app/routes/test.error.tsx:140
 msgid "Go to Form Error Test"
 msgstr "Go to Form Error Test"
 
-#: app/components/error-boundary-content.tsx:175
+#: app/components/error-boundary-content.tsx:177
 msgid "Go to Home"
 msgstr "Go to Home"
 
@@ -161,24 +157,24 @@ msgstr "Go to Home"
 msgid "Hi, {name}!"
 msgstr "Hi, {name}!"
 
-#: app/components/TheFooter.tsx:20
+#: app/components/TheFooter.tsx:19
 #: app/routes/($lang).hello.($name).tsx:44
 msgid "Home"
 msgstr "Home"
 
-#: app/routes/($lang)._index.tsx:71
+#: app/routes/($lang)._index.tsx:70
 msgid "Icons from any icon set"
 msgstr "Icons from any icon set"
 
-#: app/routes/test.error.tsx:195
+#: app/routes/test.error.tsx:198
 msgid "In development mode, you can expand the technical details to see stack traces"
 msgstr "In development mode, you can expand the technical details to see stack traces"
 
-#: app/routes/test.loader-error.tsx:134
+#: app/routes/test.loader-error.tsx:137
 msgid "Include recovery options like retry buttons or alternative navigation"
 msgstr "Include recovery options like retry buttons or alternative navigation"
 
-#: app/routes/($lang)._index.tsx:65
+#: app/routes/($lang)._index.tsx:64
 msgid "Internationalization ready"
 msgstr "Internationalization ready"
 
@@ -186,35 +182,31 @@ msgstr "Internationalization ready"
 msgid "Loader Error Test Route"
 msgstr "Loader Error Test Route"
 
-#: app/routes/($lang)._index.tsx:77
-msgid "Markdown as components"
-msgstr "Markdown as components"
-
-#: app/routes/test.error.tsx:112
+#: app/routes/test.error.tsx:110
 msgid "Navigate to a route that simulates a data loading error in SPA mode."
 msgstr "Navigate to a route that simulates a data loading error in SPA mode."
 
-#: app/routes/test.error.tsx:137
+#: app/routes/test.error.tsx:135
 msgid "Navigate to a route with a form that triggers a submission error."
 msgstr "Navigate to a route with a form that triggers a submission error."
 
-#: app/routes/test.error.tsx:122
+#: app/routes/test.error.tsx:120
 msgid "Navigate to Data Error Route"
 msgstr "Navigate to Data Error Route"
 
-#: app/routes/test.error.tsx:86
+#: app/routes/test.error.tsx:84
 msgid "Network Error Test"
 msgstr "Network Error Test"
 
-#: app/routes/($lang)._index.tsx:41
+#: app/routes/($lang)._index.tsx:40
 msgid "Next generation frontend tooling"
 msgstr "Next generation frontend tooling"
 
-#: app/routes/($lang)._index.tsx:114
+#: app/routes/($lang)._index.tsx:108
 msgid "Opinionated React Starter Template, inspired by vitesse"
 msgstr "Opinionated React Starter Template, inspired by vitesse"
 
-#: app/components/error-boundary-content.tsx:70
+#: app/components/error-boundary-content.tsx:72
 msgid "Page Error"
 msgstr "Page Error"
 
@@ -226,15 +218,15 @@ msgstr "Page Not Found"
 msgid "Please sign in to access this page."
 msgstr "Please sign in to access this page."
 
-#: app/routes/test.loader-error.tsx:127
+#: app/routes/test.loader-error.tsx:130
 msgid "Provide meaningful error messages to help users understand what went wrong"
 msgstr "Provide meaningful error messages to help users understand what went wrong"
 
-#: app/components/error-boundary-content.tsx:189
+#: app/components/error-boundary-content.tsx:191
 msgid "Reload"
 msgstr "Reload"
 
-#: app/components/error-boundary-content.tsx:224
+#: app/components/error-boundary-content.tsx:228
 msgid "Report this issue"
 msgstr "Report this issue"
 
@@ -242,36 +234,36 @@ msgstr "Report this issue"
 msgid "Result"
 msgstr "Result"
 
-#: app/components/error-boundary-content.tsx:50
-#: app/components/error-boundary-content.tsx:62
+#: app/components/error-boundary-content.tsx:52
+#: app/components/error-boundary-content.tsx:64
 msgid "Server Error"
 msgstr "Server Error"
 
-#: app/components/error-boundary-content.tsx:272
+#: app/components/error-boundary-content.tsx:276
 msgid "Something Went Wrong"
 msgstr "Something Went Wrong"
 
-#: app/components/error-boundary-content.tsx:52
+#: app/components/error-boundary-content.tsx:54
 msgid "Something went wrong on our end. Please try again shortly."
 msgstr "Something went wrong on our end. Please try again shortly."
 
-#: app/routes/test.error.tsx:152
+#: app/routes/test.error.tsx:153
 msgid "SPA Mode - Data Loading Error:"
 msgstr "SPA Mode - Data Loading Error:"
 
-#: app/routes/test.loader-error.tsx:83
+#: app/routes/test.loader-error.tsx:86
 msgid "SPA Mode (Current Implementation):"
 msgstr "SPA Mode (Current Implementation):"
 
-#: app/routes/test.loader-error.tsx:79
+#: app/routes/test.loader-error.tsx:81
 msgid "SPA Mode vs SSR Mode"
 msgstr "SPA Mode vs SSR Mode"
 
-#: app/routes/test.error.tsx:162
+#: app/routes/test.error.tsx:163
 msgid "SSR Mode - React Router:"
 msgstr "SSR Mode - React Router:"
 
-#: app/routes/test.loader-error.tsx:94
+#: app/routes/test.loader-error.tsx:97
 msgid "SSR Mode (React Router Loader):"
 msgstr "SSR Mode (React Router Loader):"
 
@@ -283,11 +275,11 @@ msgstr "Submit Form (Will Trigger Error)"
 msgid "Submit this form to trigger a validation error and test the ErrorBoundary component."
 msgstr "Submit this form to trigger a validation error and test the ErrorBoundary component."
 
-#: app/components/error-boundary-content.tsx:254
+#: app/components/error-boundary-content.tsx:258
 msgid "Technical details"
 msgstr "Technical details"
 
-#: app/routes/test.error.tsx:47
+#: app/routes/test.error.tsx:45
 msgid "Test different types of errors to see how the ErrorBoundary component handles them"
 msgstr "Test different types of errors to see how the ErrorBoundary component handles them"
 
@@ -299,15 +291,15 @@ msgstr "Test Field"
 msgid "Test form submission errors that can occur during user actions"
 msgstr "Test form submission errors that can occur during user actions"
 
-#: app/routes/test.error.tsx:90
+#: app/routes/test.error.tsx:88
 msgid "Test handling of network-related errors."
 msgstr "Test handling of network-related errors."
 
-#: app/routes/test.error.tsx:193
+#: app/routes/test.error.tsx:194
 msgid "Test the action buttons: Go Back, Go to Home"
 msgstr "Test the action buttons: Go Back, Go to Home"
 
-#: app/routes/test.error.tsx:182
+#: app/routes/test.error.tsx:183
 msgid "Testing Instructions"
 msgstr "Testing Instructions"
 
@@ -327,7 +319,7 @@ msgstr "The page you are looking for does not exist or has been moved."
 msgid "The request could not be processed due to invalid syntax."
 msgstr "The request could not be processed due to invalid syntax."
 
-#: app/components/error-boundary-content.tsx:64
+#: app/components/error-boundary-content.tsx:66
 msgid "The server encountered an error. Please try again later."
 msgstr "The server encountered an error. Please try again later."
 
@@ -343,11 +335,11 @@ msgstr "This page demonstrates what happens when an error occurs during data loa
 msgid "This route simulates a data loading error that occurs during component initialization"
 msgstr "This route simulates a data loading error that occurs during component initialization"
 
-#: app/routes/test.error.tsx:65
+#: app/routes/test.error.tsx:63
 msgid "This will throw a JavaScript error to test the ErrorBoundary component."
 msgstr "This will throw a JavaScript error to test the ErrorBoundary component."
 
-#: app/components/TheFooter.tsx:27
+#: app/components/TheFooter.tsx:26
 msgid "Toggle dark mode"
 msgstr "Toggle dark mode"
 
@@ -355,23 +347,23 @@ msgstr "Toggle dark mode"
 msgid "Trigger"
 msgstr "Trigger"
 
-#: app/routes/test.error.tsx:75
+#: app/routes/test.error.tsx:73
 msgid "Trigger Application Error"
 msgstr "Trigger Application Error"
 
-#: app/routes/test.error.tsx:97
+#: app/routes/test.error.tsx:95
 msgid "Trigger Network Error"
 msgstr "Trigger Network Error"
 
-#: app/routes/test.error.tsx:194
+#: app/routes/test.error.tsx:195
 msgid "Try the \"Report this issue\" functionality"
 msgstr "Try the \"Report this issue\" functionality"
 
-#: app/routes/($lang)._index.tsx:83
+#: app/routes/($lang)._index.tsx:77
 msgid "Typed, of course"
 msgstr "Typed, of course"
 
-#: app/routes/($lang)._index.tsx:47
+#: app/routes/($lang)._index.tsx:46
 msgid "UI library with a compiler"
 msgstr "UI library with a compiler"
 
@@ -383,15 +375,15 @@ msgstr "Unauthorized"
 msgid "Users can navigate away, report the issue, or try to recover from the error"
 msgstr "Users can navigate away, report the issue, or try to recover from the error"
 
-#: app/routes/($lang)._index.tsx:59
+#: app/routes/($lang)._index.tsx:58
 msgid "Utility-first CSS framework"
 msgstr "Utility-first CSS framework"
 
-#: app/routes/($lang)._index.tsx:109
+#: app/routes/($lang)._index.tsx:103
 msgid "Vite + React"
 msgstr "Vite + React"
 
-#: app/routes/($lang)._index.tsx:94
+#: app/routes/($lang)._index.tsx:88
 msgid "Vite logo"
 msgstr "Vite logo"
 

@@ -4,7 +4,6 @@ import { Trans, useLingui } from '@lingui/react/macro'
 import CarbonChartRadar from '~icons/carbon/chart-radar'
 import CarbonCode from '~icons/carbon/code'
 import CarbonCube from '~icons/carbon/cube'
-import CarbonDocument from '~icons/carbon/document'
 import CarbonGrid from '~icons/carbon/grid'
 import CarbonLanguage from '~icons/carbon/language'
 import CarbonLightning from '~icons/carbon/lightning'
@@ -71,12 +70,7 @@ export default function Home() {
       description: t`Icons from any icon set`,
       href: literal('https://github.com/unplugin/unplugin-icons'),
     },
-    {
-      icon: <CarbonDocument />,
-      name: literal('Markdown'),
-      description: t`Markdown as components`,
-      href: literal('https://github.com/hmsk/vite-plugin-markdown'),
-    },
+
     {
       icon: <CarbonCode />,
       name: literal('TypeScript'),

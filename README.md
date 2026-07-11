@@ -28,9 +28,6 @@ Mocking up web app with <b>Reactive-rr</b><br>
 
 - 🌍 [I18n ready](https://lingui.dev/) — with a dedicated linter ([eslint-plugin-lingui](https://github.com/lingui/eslint-plugin)) and bundled [skills](.agents/skills/lingui-best-practices/SKILL.md) to keep translations consistent
 
-<!-- - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa) -->
-
-- 🗒 [Markdown Support](https://github.com/hmsk/vite-plugin-markdown?tab=readme-ov-file)
 
 - 🏷️ [Manage meta tsgs](https://react.dev/blog/2024/04/25/react-19#support-for-metadata-tags)
 

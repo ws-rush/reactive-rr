@@ -2,7 +2,6 @@ import { useLingui } from '@lingui/react/macro'
 import { useLinguiRouter } from 'lingui-rr'
 import { Form, NavLink, useLocation } from 'react-router'
 import CarbonChartRadar from '~icons/carbon/chart-radar'
-import CarbonDicomOverlay from '~icons/carbon/dicom-overlay'
 import CarbonLanguage from '~icons/carbon/language'
 import CarbonLogoGithub from '~icons/carbon/logo-github'
 import CarbonMoon from '~icons/carbon/moon'
@@ -47,10 +46,6 @@ export function TheFooter() {
           <CarbonLanguage />
         </button>
       </Form>
-
-      <NavLink title={t`About`} to="/about">
-        <CarbonDicomOverlay className="icon-btn" />
-      </NavLink>
 
       <a
         className="icon-btn"

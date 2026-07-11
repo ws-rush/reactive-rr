@@ -21,10 +21,6 @@ msgstr "← العودة إلى اختبارات الأخطاء"
 msgid "⚠️ This will cause an error to demonstrate the ErrorBoundary"
 msgstr "⚠️ سيؤدي هذا إلى حدوث خطأ لعرض ErrorBoundary"
 
-#: app/components/TheFooter.tsx:51
-msgid "About"
-msgstr "حول"
-
 #: app/components/error-boundary-content.tsx:38
 msgid "Access Denied"
 msgstr "تم رفض الوصول"
@@ -33,27 +29,27 @@ msgstr "تم رفض الوصول"
 msgid "Action Error Test Route"
 msgstr "مسار اختبار خطأ الإجراء"
 
-#: app/routes/test.loader-error.tsx:120
+#: app/routes/test.loader-error.tsx:123
 msgid "Always wrap data loading in try-catch blocks to handle errors gracefully"
 msgstr "احرص دائمًا على تغليف تحميل البيانات في كتل try-catch للتعامل مع الأخطاء بسلاسة"
 
-#: app/components/error-boundary-content.tsx:71
+#: app/components/error-boundary-content.tsx:73
 msgid "An error occurred while loading this page."
 msgstr "حدث خطأ أثناء تحميل هذه الصفحة."
 
-#: app/components/error-boundary-content.tsx:211
+#: app/components/error-boundary-content.tsx:214
 msgid "An error report has been sent to our team. Thank you for your help."
 msgstr "تم إرسال تقرير الخطأ إلى فريقنا. شكرًا لمساعدتك."
 
-#: app/components/error-boundary-content.tsx:273
+#: app/components/error-boundary-content.tsx:277
 msgid "An unexpected error occurred."
 msgstr "حدث خطأ غير متوقع."
 
-#: app/components/error-boundary-content.tsx:247
+#: app/components/error-boundary-content.tsx:251
 msgid "Application Error"
 msgstr "خطأ في التطبيق"
 
-#: app/routes/test.error.tsx:61
+#: app/routes/test.error.tsx:59
 msgid "Application Error Test"
 msgstr "اختبار خطأ التطبيق"
 
@@ -65,11 +61,11 @@ msgstr "رجوع"
 msgid "Bad Request"
 msgstr "طلب غير صالح"
 
-#: app/components/TheFooter.tsx:43
+#: app/components/TheFooter.tsx:42
 msgid "Change language"
 msgstr "تغيير اللغة"
 
-#: app/routes/test.error.tsx:186
+#: app/routes/test.error.tsx:187
 msgid "Click any of the buttons above to trigger different types of errors"
 msgstr "انقر على أي من الأزرار أعلاه لتشغيل أنواع مختلفة من الأخطاء"
 
@@ -77,7 +73,7 @@ msgstr "انقر على أي من الأزرار أعلاه لتشغيل أنو�
 msgid "Component useEffect hook"
 msgstr "خطاف useEffect الخاص بالمكوّن"
 
-#: app/routes/($lang)._index.tsx:120
+#: app/routes/($lang)._index.tsx:114
 msgid "count is"
 msgstr "العدد هو"
 
@@ -89,7 +85,7 @@ msgstr "خطأ في تحميل البيانات (404)"
 msgid "Data Loading Error Simulation"
 msgstr "محاكاة خطأ تحميل البيانات"
 
-#: app/routes/test.error.tsx:108
+#: app/routes/test.error.tsx:106
 msgid "Data Loading Error Test (SPA Mode)"
 msgstr "اختبار خطأ تحميل البيانات (وضع SPA)"
 
@@ -97,7 +93,7 @@ msgstr "اختبار خطأ تحميل البيانات (وضع SPA)"
 msgid "Demo of dynamic route"
 msgstr "عرض لمسار ديناميكي"
 
-#: app/routes/test.error.tsx:190
+#: app/routes/test.error.tsx:191
 msgid "Each error type will be caught by the ErrorBoundary component"
 msgstr "سيتم التقاط كل نوع خطأ بواسطة مكوّن ErrorBoundary"
 
@@ -113,7 +109,7 @@ msgstr "رمز الخطأ"
 msgid "Error Code Examples"
 msgstr "أمثلة على رموز الأخطاء"
 
-#: app/routes/test.loader-error.tsx:115
+#: app/routes/test.loader-error.tsx:118
 msgid "Error Handling Best Practices"
 msgstr "أفضل الممارسات للتعامل مع الأخطاء"
 
@@ -125,11 +121,11 @@ msgstr "نوع الخطأ"
 msgid "ErrorBoundary catches and displays user-friendly error"
 msgstr "يلتقط ErrorBoundary الخطأ ويعرض رسالة واضحة للمستخدم"
 
-#: app/routes/test.error.tsx:45
+#: app/routes/test.error.tsx:43
 msgid "ErrorBoundary Test Page"
 msgstr "صفحة اختبار ErrorBoundary"
 
-#: app/routes/($lang)._index.tsx:53
+#: app/routes/($lang)._index.tsx:52
 msgid "File-based routing with layouts"
 msgstr "توجيه قائم على الملفات مع تخطيطات"
 
@@ -137,23 +133,23 @@ msgstr "توجيه قائم على الملفات مع تخطيطات"
 msgid "Form Submission Error Test"
 msgstr "اختبار خطأ إرسال النموذج"
 
-#: app/routes/test.error.tsx:133
+#: app/routes/test.error.tsx:131
 msgid "Form Submission Error Test (SPA Mode)"
 msgstr "اختبار خطأ إرسال النموذج (وضع SPA)"
 
-#: app/routes/($lang)._index.tsx:138
+#: app/routes/($lang)._index.tsx:132
 msgid "GO"
 msgstr "انطلق"
 
-#: app/components/error-boundary-content.tsx:182
+#: app/components/error-boundary-content.tsx:184
 msgid "Go Back"
 msgstr "رجوع"
 
-#: app/routes/test.error.tsx:142
+#: app/routes/test.error.tsx:140
 msgid "Go to Form Error Test"
 msgstr "الانتقال إلى اختبار خطأ النموذج"
 
-#: app/components/error-boundary-content.tsx:175
+#: app/components/error-boundary-content.tsx:177
 msgid "Go to Home"
 msgstr "الذهاب إلى الرئيسية"
 
@@ -161,24 +157,24 @@ msgstr "الذهاب إلى الرئيسية"
 msgid "Hi, {name}!"
 msgstr "أهلاً، {name}!"
 
-#: app/components/TheFooter.tsx:20
+#: app/components/TheFooter.tsx:19
 #: app/routes/($lang).hello.($name).tsx:44
 msgid "Home"
 msgstr "الرئيسية"
 
-#: app/routes/($lang)._index.tsx:71
+#: app/routes/($lang)._index.tsx:70
 msgid "Icons from any icon set"
 msgstr "أيقونات من أي مجموعة أيقونات"
 
-#: app/routes/test.error.tsx:195
+#: app/routes/test.error.tsx:198
 msgid "In development mode, you can expand the technical details to see stack traces"
 msgstr "في وضع التطوير، يمكنك توسيع التفاصيل التقنية لرؤية تتبع المكدس"
 
-#: app/routes/test.loader-error.tsx:134
+#: app/routes/test.loader-error.tsx:137
 msgid "Include recovery options like retry buttons or alternative navigation"
 msgstr "تضمين خيارات الاستعادة مثل أزرار إعادة المحاولة أو التنقل البديل"
 
-#: app/routes/($lang)._index.tsx:65
+#: app/routes/($lang)._index.tsx:64
 msgid "Internationalization ready"
 msgstr "جاهز للتدويل"
 
@@ -186,35 +182,31 @@ msgstr "جاهز للتدويل"
 msgid "Loader Error Test Route"
 msgstr "مسار اختبار خطأ المُحمِّل"
 
-#: app/routes/($lang)._index.tsx:77
-msgid "Markdown as components"
-msgstr "ماركداون كمكوّنات"
-
-#: app/routes/test.error.tsx:112
+#: app/routes/test.error.tsx:110
 msgid "Navigate to a route that simulates a data loading error in SPA mode."
 msgstr "الانتقال إلى مسار يحاكي خطأ تحميل البيانات في وضع SPA."
 
-#: app/routes/test.error.tsx:137
+#: app/routes/test.error.tsx:135
 msgid "Navigate to a route with a form that triggers a submission error."
 msgstr "الانتقال إلى مسار يحتوي على نموذج يشغّل خطأً في الإرسال."
 
-#: app/routes/test.error.tsx:122
+#: app/routes/test.error.tsx:120
 msgid "Navigate to Data Error Route"
 msgstr "الانتقال إلى مسار خطأ البيانات"
 
-#: app/routes/test.error.tsx:86
+#: app/routes/test.error.tsx:84
 msgid "Network Error Test"
 msgstr "اختبار خطأ الشبكة"
 
-#: app/routes/($lang)._index.tsx:41
+#: app/routes/($lang)._index.tsx:40
 msgid "Next generation frontend tooling"
 msgstr "أدوات واجهات أمامية للجيل القادم"
 
-#: app/routes/($lang)._index.tsx:114
+#: app/routes/($lang)._index.tsx:108
 msgid "Opinionated React Starter Template, inspired by vitesse"
 msgstr "قالب بداية لريأكت بخيارات مسبقة، مستوحى من vitesse"
 
-#: app/components/error-boundary-content.tsx:70
+#: app/components/error-boundary-content.tsx:72
 msgid "Page Error"
 msgstr "خطأ في الصفحة"
 
@@ -226,15 +218,15 @@ msgstr "الصفحة غير موجودة"
 msgid "Please sign in to access this page."
 msgstr "يرجى تسجيل الدخول للوصول إلى هذه الصفحة."
 
-#: app/routes/test.loader-error.tsx:127
+#: app/routes/test.loader-error.tsx:130
 msgid "Provide meaningful error messages to help users understand what went wrong"
 msgstr "تقديم رسائل خطأ ذات معنى لمساعدة المستخدمين على فهم ما حدث"
 
-#: app/components/error-boundary-content.tsx:189
+#: app/components/error-boundary-content.tsx:191
 msgid "Reload"
 msgstr "إعادة التحميل"
 
-#: app/components/error-boundary-content.tsx:224
+#: app/components/error-boundary-content.tsx:228
 msgid "Report this issue"
 msgstr "الإبلاغ عن هذه المشكلة"
 
@@ -242,36 +234,36 @@ msgstr "الإبلاغ عن هذه المشكلة"
 msgid "Result"
 msgstr "النتيجة"
 
-#: app/components/error-boundary-content.tsx:50
-#: app/components/error-boundary-content.tsx:62
+#: app/components/error-boundary-content.tsx:52
+#: app/components/error-boundary-content.tsx:64
 msgid "Server Error"
 msgstr "خطأ في الخادم"
 
-#: app/components/error-boundary-content.tsx:272
+#: app/components/error-boundary-content.tsx:276
 msgid "Something Went Wrong"
 msgstr "حدث خطأ ما"
 
-#: app/components/error-boundary-content.tsx:52
+#: app/components/error-boundary-content.tsx:54
 msgid "Something went wrong on our end. Please try again shortly."
 msgstr "حدث خطأ من جانبنا. يرجى المحاولة مرة أخرى قريبًا."
 
-#: app/routes/test.error.tsx:152
+#: app/routes/test.error.tsx:153
 msgid "SPA Mode - Data Loading Error:"
 msgstr "وضع SPA - خطأ تحميل البيانات:"
 
-#: app/routes/test.loader-error.tsx:83
+#: app/routes/test.loader-error.tsx:86
 msgid "SPA Mode (Current Implementation):"
 msgstr "وضع SPA (التنفيذ الحالي):"
 
-#: app/routes/test.loader-error.tsx:79
+#: app/routes/test.loader-error.tsx:81
 msgid "SPA Mode vs SSR Mode"
 msgstr "وضع SPA مقابل وضع SSR"
 
-#: app/routes/test.error.tsx:162
+#: app/routes/test.error.tsx:163
 msgid "SSR Mode - React Router:"
 msgstr "وضع SSR - React Router:"
 
-#: app/routes/test.loader-error.tsx:94
+#: app/routes/test.loader-error.tsx:97
 msgid "SSR Mode (React Router Loader):"
 msgstr "وضع SSR (مُحمِّل React Router):"
 
@@ -283,11 +275,11 @@ msgstr "إرسال النموذج (سيشغّل خطأً)"
 msgid "Submit this form to trigger a validation error and test the ErrorBoundary component."
 msgstr "أرسل هذا النموذج لتشغيل خطأ في التحقق واختبار مكوّن ErrorBoundary."
 
-#: app/components/error-boundary-content.tsx:254
+#: app/components/error-boundary-content.tsx:258
 msgid "Technical details"
 msgstr "تفاصيل تقنية"
 
-#: app/routes/test.error.tsx:47
+#: app/routes/test.error.tsx:45
 msgid "Test different types of errors to see how the ErrorBoundary component handles them"
 msgstr "اختبر أنواعًا مختلفة من الأخطاء لترى كيف يتعامل معها مكوّن ErrorBoundary"
 
@@ -299,15 +291,15 @@ msgstr "حقل اختبار"
 msgid "Test form submission errors that can occur during user actions"
 msgstr "اختبر أخطاء إرسال النموذج التي قد تحدث أثناء إجراءات المستخدم"
 
-#: app/routes/test.error.tsx:90
+#: app/routes/test.error.tsx:88
 msgid "Test handling of network-related errors."
 msgstr "اختبر التعامل مع الأخطاء المتعلقة بالشبكة."
 
-#: app/routes/test.error.tsx:193
+#: app/routes/test.error.tsx:194
 msgid "Test the action buttons: Go Back, Go to Home"
 msgstr "اختبر أزرار الإجراءات: الرجوع، الذهاب إلى الرئيسية"
 
-#: app/routes/test.error.tsx:182
+#: app/routes/test.error.tsx:183
 msgid "Testing Instructions"
 msgstr "تعليمات الاختبار"
 
@@ -327,7 +319,7 @@ msgstr "الصفحة التي تبحث عنها غير موجودة أو تم ن
 msgid "The request could not be processed due to invalid syntax."
 msgstr "تعذّرت معالجة الطلب بسبب صياغة غير صالحة."
 
-#: app/components/error-boundary-content.tsx:64
+#: app/components/error-boundary-content.tsx:66
 msgid "The server encountered an error. Please try again later."
 msgstr "واجه الخادم خطأ. يرجى المحاولة مرة أخرى لاحقًا."
 
@@ -343,11 +335,11 @@ msgstr "توضّح هذه الصفحة ما يحدث عند وقوع خطأ أث
 msgid "This route simulates a data loading error that occurs during component initialization"
 msgstr "يحاكي هذا المسار خطأ تحميل بيانات يقع أثناء تهيئة المكوّن"
 
-#: app/routes/test.error.tsx:65
+#: app/routes/test.error.tsx:63
 msgid "This will throw a JavaScript error to test the ErrorBoundary component."
 msgstr "سيؤدي هذا إلى إطلاق خطأ JavaScript لاختبار مكوّن ErrorBoundary."
 
-#: app/components/TheFooter.tsx:27
+#: app/components/TheFooter.tsx:26
 msgid "Toggle dark mode"
 msgstr "تبديل الوضع المظلم"
 
@@ -355,23 +347,23 @@ msgstr "تبديل الوضع المظلم"
 msgid "Trigger"
 msgstr "المُحفّز"
 
-#: app/routes/test.error.tsx:75
+#: app/routes/test.error.tsx:73
 msgid "Trigger Application Error"
 msgstr "تشغيل خطأ التطبيق"
 
-#: app/routes/test.error.tsx:97
+#: app/routes/test.error.tsx:95
 msgid "Trigger Network Error"
 msgstr "تشغيل خطأ الشبكة"
 
-#: app/routes/test.error.tsx:194
+#: app/routes/test.error.tsx:195
 msgid "Try the \"Report this issue\" functionality"
 msgstr "جرّب وظيفة \"الإبلاغ عن هذه المشكلة\""
 
-#: app/routes/($lang)._index.tsx:83
+#: app/routes/($lang)._index.tsx:77
 msgid "Typed, of course"
 msgstr "مدعوم بالأنواع، بالطبع"
 
-#: app/routes/($lang)._index.tsx:47
+#: app/routes/($lang)._index.tsx:46
 msgid "UI library with a compiler"
 msgstr "مكتبة واجهات مع مُجمِّع"
 
@@ -383,15 +375,15 @@ msgstr "غير مصرّح"
 msgid "Users can navigate away, report the issue, or try to recover from the error"
 msgstr "يمكن للمستخدمين الانتقال بعيدًا، أو الإبلاغ عن المشكلة، أو محاولة الاستعادة من الخطأ"
 
-#: app/routes/($lang)._index.tsx:59
+#: app/routes/($lang)._index.tsx:58
 msgid "Utility-first CSS framework"
 msgstr "إطار CSS يعتمد على الأدوات المساعدة"
 
-#: app/routes/($lang)._index.tsx:109
+#: app/routes/($lang)._index.tsx:103
 msgid "Vite + React"
 msgstr "Vite + React"
 
-#: app/routes/($lang)._index.tsx:94
+#: app/routes/($lang)._index.tsx:88
 msgid "Vite logo"
 msgstr "شعار Vite"
 
