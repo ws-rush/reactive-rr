@@ -40,8 +40,6 @@ Mocking up web app with <b>Reactive-rr</b><br>
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest)<!--, E2E Testing with [Cypress](https://cypress.io/)
   on [GitHub Actions](https://github.com/features/actions) # miss ci piplines and e2e test-->
 
-- 🔎 Inspect code with - [Vite Inspect](https://github.com/antfu/vite-plugin-inspect), visit it at `/__inspect`. code visualization (open stats.html file).
-
 <br>
 
 ## Try it now!

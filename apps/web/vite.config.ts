@@ -1,20 +1,15 @@
 /// <reference types="vite/client" />
 
 import { lingui } from '@lingui/vite-plugin'
-import { defineConfig, type PluginOption } from 'vite'
+import { defineConfig } from 'vite'
 import Icons from 'unplugin-icons/vite'
 import { imagetools } from 'vite-imagetools'
-import Inspect from 'vite-plugin-inspect'
 import { reactRouter } from '@react-router/dev/vite'
-import { qrcode } from 'vite-plugin-qrcode'
 import macrosPlugin from 'vite-plugin-babel-macros'
 import { ValidateEnv } from '@julr/vite-plugin-validate-env'
 import tailwindcss from '@tailwindcss/vite'
-import { visualizer } from 'rollup-plugin-visualizer'
 import babel from 'vite-plugin-babel'
 import Unfonts from 'unplugin-fonts/vite'
-import { DevTools } from '@vitejs/devtools'
-import devtoolsJson from 'vite-plugin-devtools-json'
 
 const ReactCompilerConfig = {/* ... */}
 
@@ -23,13 +18,10 @@ export default defineConfig({
   resolve: { alias: { '@': '/app' } },
 
   plugins: [
-    devtoolsJson(),
-    DevTools(),
     // valiadte .env variables, see https://github.com/Julien-R44/vite-plugin-validate-env
     ValidateEnv({}),
     tailwindcss(),
     reactRouter(),
-    visualizer() as unknown as PluginOption,
     macrosPlugin(),
     lingui(),
     Icons({
@@ -49,8 +41,6 @@ export default defineConfig({
         plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
       },
     }),
-    Inspect(),
-
     // add `declare module "@/assets/*"` to vite-env.d.ts to use with typescript
     imagetools(),
     Unfonts({
@@ -66,11 +56,5 @@ export default defineConfig({
         preload: true,
       },
     }),
-    qrcode(),
-  ].filter(Boolean) as PluginOption[],
-  build: {
-    rolldownOptions: {
-      devtools: {},
-    },
-  },
+  ].filter(Boolean),
 })
