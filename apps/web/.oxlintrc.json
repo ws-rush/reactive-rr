@@ -1,0 +1,37 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "oxc"],
+  "jsPlugins": ["eslint-plugin-lingui"],
+  "categories": {
+    "correctness": "error"
+  },
+  "env": {
+    "browser": true,
+    "builtin": true
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/react-compiler": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["app/**/*.{ts,tsx}"],
+      "rules": {
+        "lingui/t-call-in-function": "error",
+        "lingui/no-single-tag-to-translate": "warn",
+        "lingui/no-single-variables-to-translate": "warn",
+        "lingui/no-trans-inside-trans": "warn",
+        "lingui/no-expression-in-message": "warn",
+        "lingui/no-unlocalized-strings": [
+          "warn",
+          {
+            "ignoreNames": ["className", "style", "method", "action", "to"],
+            "ignoreFunctions": ["literal", "navigate"]
+          }
+        ]
+      }
+    }
+  ]
+}
