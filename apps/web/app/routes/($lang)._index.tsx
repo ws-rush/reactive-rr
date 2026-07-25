@@ -110,10 +110,10 @@ export default function Home() {
       </p>
 
       {/* Counter */}
-      <p className="mt-6 text-sm opacity-75">
+      <div className="mt-6 text-sm opacity-75">
         <Trans>count is</Trans>
         <TheCounter initial={0} />
-      </p>
+      </div>
 
       {/* Name → /hi */}
       <div className="mt-2">

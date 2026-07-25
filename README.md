@@ -16,7 +16,9 @@ Mocking up web app with <b>Reactive-rr</b><br>
 
 ## Features
 
-- ⚡️ [React 19](https://react.dev/), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [React 19](https://react.dev/), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [Rolldown](https://rolldown.rs/) - born with fastness
+
+- 🔍 [Code Inspector](https://github.com/zh-lx/code-inspector) - Jump directly from browser DOM elements to source code in your editor
 
 - 🗂️ [File based routing with layouts support](https://reactrouter.com/dev/how-to/file-route-conventions), with a bundled [skill](.agents/skills/react-router/SKILL.md) to guide router usage
 
@@ -36,6 +38,8 @@ Mocking up web app with <b>Reactive-rr</b><br>
 - 🦾 TypeScript, of course
 
 - 🥊 Git hooks with [lefthook](https://github.com/evilmartians/lefthook)
+
+- 🔍 [Code Inspector](https://github.com/zh-lx/code-inspector) Jump directly from browser DOM elements to source code in your editor
 
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest)<!--, E2E Testing with [Cypress](https://cypress.io/)
   on [GitHub Actions](https://github.com/features/actions) # miss ci piplines and e2e test-->

@@ -10,6 +10,7 @@ import { ValidateEnv } from '@julr/vite-plugin-validate-env'
 import tailwindcss from '@tailwindcss/vite'
 import babel from 'vite-plugin-babel'
 import Unfonts from 'unplugin-fonts/vite'
+import { codeInspectorPlugin } from 'code-inspector-plugin'
 
 const ReactCompilerConfig = {/* ... */}
 
@@ -18,6 +19,11 @@ export default defineConfig({
   resolve: { alias: { '@': '/app' } },
 
   plugins: [
+    codeInspectorPlugin({
+      bundler: 'vite',
+      editor: 'code',
+      showSwitch: true,
+    }),
     // valiadte .env variables, see https://github.com/Julien-R44/vite-plugin-validate-env
     ValidateEnv({}),
     tailwindcss(),
@@ -32,8 +38,9 @@ export default defineConfig({
       defaultClass: 'inline-block',
     }),
     babel({
-      filter: /^(?:.*\/app\/.*|~icons\/.*)\.[jt]sx?$/,
+      include: /^(?:.*\/app\/.*|~icons\/.*)\.[jt]sx?$/,
       babelConfig: {
+        compact: true,
         presets: [
           '@babel/preset-typescript',
           ['@babel/preset-react', { runtime: 'automatic' }],
