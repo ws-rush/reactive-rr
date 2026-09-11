@@ -78,7 +78,7 @@
     "vite-imagetools": "^10.0.1",
     "vite-plugin-babel": "^1.7.3",
     "vite-plugin-babel-macros": "^1.0.6",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "msw": {
     "workerDirectory": [
