@@ -64,7 +64,7 @@
     "code-inspector-plugin": "^2.0.5",
     "eslint-plugin-lingui": "^0.14.0",
     "linkify-it": "^5.0.1",
-    "markdown-it": "^14.2.0",
+    "markdown-it": "^14.3.3",
     "msw": "^2.15.0",
     "oxfmt": "^0.59.0",
     "oxlint": "^1.74.0",
